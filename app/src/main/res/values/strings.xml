@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">FinalProject</string>
+    <string name="app_name">NASA Earth Imagery Database</string>
+    <string name="welcomeMessage">Welcome to \n NASA Earth \n Imagery Database</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
+    <string name="profileLabel">Create a Profile</string>
+    <string name="profileFirstNameLabel">First Name:</string>
+    <string name="profileLastNameLabel">Last Name:</string>
+    <string name="profileEmailAddressLabel">Email Address:</string>
+    <string name="profileUsernameLabel">username:</string>
+    <string name="profilePasswordLabel">Password:</string>
+    <string name="profilePictureLabel">Profile Picture</string>
+    <string name="profileFirstNameHint">Type your first name here.</string>
+    <string name="profileLastNameHint">Type your last name here.</string>
+    <string name="profileEmailAddressHint">Type your email address here.</string>
+    <string name="profileUsernameHint">Type your username here.</string>
+    <string name="profilePasswordHint">Type your password here.</string>
+    <string name="profileSaveButton">Save</string>
+    <string name="profileCancelButton">Cancel</string>
+    <string name="developerDetails">Designed by Omar Zohouradi</string>
+    <string name="loginLabel">Login</string>
+    <string name="longFieldHint">Type a longtitude</string>
+    <string name="latFieldHint">Type a latitude</string>
+    <string name="imageSearchButton">Search</string>
+
 </resources>

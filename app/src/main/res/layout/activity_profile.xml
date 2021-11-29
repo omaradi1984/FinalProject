@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:id="@+id/ProfileLayout"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/profileLabel"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:background="@color/blue_Haze"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/profilePictureLabel"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:labelFor="@+id/profilePictureButton"
+        />
+
+    <ImageButton
+        android:id="@+id/profilePictureButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@android:drawable/picture_frame"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/fNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profileFirstNameLabel"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:labelFor="@+id/fNameField"
+        />
+
+    <EditText
+        android:id="@+id/fNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/profileFirstNameHint"
+        android:textColorHint="@color/fiord"
+        android:minHeight="48dp"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/lNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profileLastNameLabel"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:labelFor="@+id/lNameField"
+        />
+
+    <EditText
+        android:id="@+id/lNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/profileLastNameHint"
+        android:textColorHint="@color/fiord"
+        android:minHeight="48dp"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/emailAddressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profileEmailAddressLabel"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:labelFor="@+id/emailAddressField"
+        />
+
+    <EditText
+        android:id="@+id/emailAddressField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/profileEmailAddressHint"
+        android:textColorHint="@color/fiord"
+        android:minHeight="48dp"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profilePasswordLabel"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:labelFor="@+id/passwordField"
+        />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/profilePasswordHint"
+        android:textColorHint="@color/fiord"
+        android:minHeight="48dp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/profileSaveButton"
+        android:layout_width="140dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text="@string/profileSaveButton"
+        android:backgroundTint="@color/east_Bay"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        />
+
+    <Button
+        android:id="@+id/profileCancelButton"
+        android:layout_width="140dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text="@string/profileCancelButton"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/east_Bay"
+        android:textSize="24dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/lowerBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="@color/black"
+        android:text="@string/developerDetails"
+        android:textSize="11dp"
+        android:textAlignment="center"
+        android:background="@color/blue_Haze"
+        />
+
+</LinearLayout>

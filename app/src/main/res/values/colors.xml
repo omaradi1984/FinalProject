@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="fiord">#99434C68</color>
+    <color name="fiordFull">#434C68</color>
+    <color name="cadet_Blue">#A7AFC7</color>
+    <color name="blue_Haze">#C0C7D8</color>
+    <color name="mortar">#4C4450</color>
+    <color name="east_Bay">#4C588C</color>
 </resources>

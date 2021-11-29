@@ -1,18 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:background="@drawable/background"
+        >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/white"
+            android:lines="3"
+            android:text="@string/welcomeMessage"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/emailAddressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profileEmailAddressLabel"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:labelFor="@+id/emailAddressField"
+            />
+
+        <EditText
+            android:id="@+id/loginEmailAddressField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fiord"
+            android:hint="@string/profileEmailAddressHint"
+            android:textColorHint="@color/white"
+            android:minHeight="48dp"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profilePasswordLabel"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:labelFor="@+id/passwordField"
+            />
+
+        <EditText
+            android:id="@+id/loginPasswordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fiord"
+            android:hint="@string/profilePasswordHint"
+            android:textColorHint="@color/white"
+            android:minHeight="48dp"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:text="@string/loginLabel"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/fiordFull"
+            android:textSize="24sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:text="@string/signup"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/fiordFull"
+            android:textSize="24sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/lowerBar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:text="@string/developerDetails"
+            android:textSize="11sp"
+            android:textAlignment="center"
+            android:background="@color/blue_Haze"
+            />
+    </LinearLayout>
+
