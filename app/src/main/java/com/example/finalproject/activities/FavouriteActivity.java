@@ -33,6 +33,8 @@ import com.example.finalproject.beans.Image;
 import com.example.finalproject.beans.User;
 import com.example.finalproject.dao.DbOpener;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.io.BufferedInputStream;
 import java.io.InputStream;
@@ -108,6 +110,7 @@ public class FavouriteActivity extends AppCompatActivity implements NavigationVi
                         removeFromFavourite(selectedPicture);
                         imageArrayList.remove(pos);
                         myListAdapter.notifyDataSetChanged();
+                        Snackbar.make(favouriteView, "Image has been deleted.", BaseTransientBottomBar.LENGTH_LONG).show();
                     })
                     .setNegativeButton(R.string.NegativeButton, (click, arg) ->{
                     });
