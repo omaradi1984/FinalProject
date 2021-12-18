@@ -49,7 +49,7 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
 
     EditText longitude, latitude;
     TextView datePicker;
-    Button getImage, addToFavourite, downloadImage;
+    Button getImage, addToFavourite; //, downloadImage
     ImageView imageView;
     ProgressBar progressBar;
 
@@ -106,7 +106,7 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
         //Buttons
         addToFavourite = findViewById(R.id.favourite_button);
         getImage = findViewById(R.id.get_image_button);
-        downloadImage = findViewById(R.id.download_button);
+      //  downloadImage = findViewById(R.id.download_button);
 
         progressBar = findViewById(R.id.progressBar);
 
@@ -156,7 +156,7 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
 
                     imageArrayList.add(newImage);
 
-                    checkIfImageDownloaded(lon, lat, date);
+                 //   checkIfImageDownloaded(lon, lat, date);
                     checkIfImageInFavourite(userId, lon, lat, date);
                 }else{
                     Toast.makeText(ImageGrabber.this, "There is no imagery associated with the information provided! Try again.",Toast.LENGTH_LONG).show();
@@ -165,7 +165,7 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
             }
         });
 
-        downloadImage.setOnClickListener(v -> {
+       /* downloadImage.setOnClickListener(v -> {
             lon = longitude.getText().toString();
             lat = latitude.getText().toString();
             date = datePicker.getText().toString();
@@ -177,7 +177,7 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
                         askPermission();
                     }
                 }
-        );
+        );*/
 
         addToFavourite.setOnClickListener(click -> {
 
@@ -227,7 +227,7 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
         results.close();
     }
 
-    private long checkIfImageInHistory(int userId, String lon, String lat, String date) {
+    /*private long checkIfImageInHistory(int userId, String lon, String lat, String date) {
         long historyId = 0;
         //get a database connection:
         DbOpener dbOpener = new DbOpener(this);
@@ -244,13 +244,13 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
         }
         results.close();
         return historyId;
-    }
+    }*/
 
-    private void askPermission() {
+   /* private void askPermission() {
         ActivityCompat.requestPermissions(ImageGrabber.this,new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_IMAGE_GRABBER);
-    }
+    }*/
 
-    private void checkIfImageDownloaded(String lon, String lat, String date){
+   /* private void checkIfImageDownloaded(String lon, String lat, String date){
         // naming file with longitude, latitude and date info.
         String fileName = lon + lat + date;
 
@@ -258,12 +258,12 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
 
         File file = new File(dir,  fileName + ".PNG");
 
-        if(file.exists()){
+     /*   if(file.exists()){
            downloadImage.setBackgroundResource(R.drawable.download_after);
         }else{
             downloadImage.setBackgroundResource(R.drawable.download_before);
         }
-    }
+    }*/
 
     private void downloadImage() {
         // naming file with longitude, latitude and date info.
@@ -282,8 +282,8 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
         if(!file.exists()){
            createImage(file, bitmap);
             Toast.makeText(ImageGrabber.this, "Image successfully saved!", Toast.LENGTH_SHORT).show();
-            downloadImage.setBackgroundResource(R.drawable.download_after);
-            addImageToGallery(file);
+          //  downloadImage.setBackgroundResource(R.drawable.download_after);
+        //    addImageToGallery(file);
         }else{
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle(R.string.DownloadConfirmation)
@@ -318,14 +318,14 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    private void addImageToGallery(File f) {
+    /*private void addImageToGallery(File f) {
         Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
         Uri contentUri = Uri.fromFile(f);
         mediaScanIntent.setData(contentUri);
         this.sendBroadcast(mediaScanIntent);
-    }
+    }*/
 
-    @Override
+   /* @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
@@ -336,7 +336,7 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(ImageGrabber.this,"Please give permission to save images.",Toast.LENGTH_SHORT).show();
             }
         }
-    }
+    }*/
 
     /**
      * Simple function to set a Drawable to the image View
@@ -406,7 +406,7 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
                 intent.putParcelableArrayListExtra("favourite", imageArrayList);
                 startActivityForResult(intent, REQUEST_IMAGE_GRABBER);
                 break;
-            case R.id.history_item:
+           // case R.id.history_item:
                 //   intent = new Intent(this, History.class);
                 //    startActivity(intent);
         }
@@ -441,7 +441,7 @@ public class ImageGrabber extends AppCompatActivity implements NavigationView.On
                 intent.putParcelableArrayListExtra("favourite", imageArrayList);
                 startActivityForResult(intent, REQUEST_IMAGE_GRABBER);
                 break;
-            case R.id.history_item:
+        //    case R.id.history_item:
                 //   intent = new Intent(this, History.class);
                 //                    intent.putExtra("currentUser", currentUser);
                 //                intent.putParcelableArrayListExtra("favourite", imageArrayList);

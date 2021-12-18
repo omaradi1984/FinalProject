@@ -196,7 +196,7 @@ public class FavouriteActivity extends AppCompatActivity implements NavigationVi
                 break;
             case R.id.favourite_item:
                 break;
-            case R.id.history_item:
+           // case R.id.history_item:
              //   intent = new Intent(this, History.class);
             //    startActivity(intent);
         }
@@ -229,7 +229,7 @@ public class FavouriteActivity extends AppCompatActivity implements NavigationVi
                 break;
             case R.id.favourite_item:
                 break;
-            case R.id.history_item:
+         //   case R.id.history_item:
                 //   intent = new Intent(this, History.class);
                 //    startActivity(intent);
         }
