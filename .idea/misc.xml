@@ -3,13 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3402777777777778" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.23560910307898258" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout-w936dp/activity_login.xml" value="0.275" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/activity_favourite.xml" value="0.33" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/activity_image_grabber.xml" value="0.3091286307053942" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/activity_image_locator.xml" value="0.2865716429107277" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/activity_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/drawer_layout.xml" value="0.29483695652173914" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/favourite_drawer_layout.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/image_layout.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/image_list_layout.xml" value="0.33" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/picture_layout.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/testing.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/layout/weatherforecast_layout.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/menu/menu.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/menu/menu_2.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/menu/menu_favourite.xml" value="0.32592592592592595" />
+        <entry key="..\:/Users/omara/AndroidStudioProjects/FinalProject/app/src/main/res/xml/file_paths.xml" value="0.32592592592592595" />
       </map>
     </option>
   </component>

@@ -1,4 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Projet final</string>
+    <string name="welcomeMessage">Welcome to \n NASA Earth \n Imagery Database</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
+    <string name="profileLabel">Create a Profile</string>
+    <string name="profileFirstNameLabel">First Name:</string>
+    <string name="profileLastNameLabel">Last Name:</string>
+    <string name="profileEmailAddressLabel">Email Address:</string>
+    <string name="profileUsernameLabel">username:</string>
+    <string name="profilePasswordLabel">Password:</string>
+    <string name="profilePictureLabel">Profile Picture</string>
+    <string name="profileFirstNameHint">Type your first name here.</string>
+    <string name="profileLastNameHint">Type your last name here.</string>
+    <string name="profileEmailAddressHint">Type your email address here.</string>
+    <string name="profileUsernameHint">Type your username here.</string>
+    <string name="profilePasswordHint">Type your password here.</string>
+    <string name="profileSaveButton">Save</string>
+    <string name="profileCancelButton">Cancel</string>
+    <string name="developerDetails">Designed by Omar Zohouradi</string>
+    <string name="loginLabel">Login</string>
+    <string name="longFieldHint">Longitude</string>
+    <string name="latFieldHint">Latitude</string>
+    <string name="imageGrabButton">Get image</string>
+    <string name="todo">TODO</string>
+    <string name="favourite_icon">Favourite icon</string>
+    <string name="imageButtonContentDescription">Profile picture</string>
+    <string name="firstNameContentDescription">First name field</string>
+    <string name="LogoutButtonLabel">Logout</string>
+    <string name="LogoutButton">Logout</string>
+    <string name="weatherButton">Weather</string>
+    <string name="favouriteButton">Favourites</string>
+    <string name="ProfileButton">My profile</string>
+    <string name="imageGrabber">Image Grabber</string>
+    <string name="dateFieldHint">Pick a date</string>
+    <string name="PositiveButton">Delete</string>
+    <string name="NegativeButton">No</string>
+    <string name="history">History</string>
+    <string name="DownloadConfirmation">Image already downloaded</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item android:id="@+id/image_item"
+        android:icon="@drawable/nasa"
+        android:title="@string/imageGrabber"
+        app:showAsAction="always"
+        android:orderInCategory="1"/>
+
+    <item android:id="@+id/weather_item"
+        android:icon="@drawable/weather"
+        android:title="@string/weatherButton"
+        app:showAsAction="always"
+        android:orderInCategory="2"/>
+
+    <item android:id="@+id/history_item"
+        android:icon="@drawable/history"
+        android:orderInCategory="3"
+        app:showAsAction="always"
+        android:title="@string/history"/>
+
+    <item android:id="@+id/favourite_item"
+        android:icon="@drawable/favourite_after"
+        android:orderInCategory="3"
+        app:showAsAction="always"
+        android:title="@string/favouriteButton"/>
+
+
+    <item android:id="@+id/profile_item"
+        android:title="@string/ProfileButton"
+        android:icon="@drawable/profile"
+        android:orderInCategory="4"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/logout_item"
+        android:icon="@drawable/logout"
+        android:orderInCategory="5"
+        app:showAsAction="ifRoom"
+        android:title="@string/LogoutButton"/>
+</menu>

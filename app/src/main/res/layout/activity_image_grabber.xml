@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ImageGrabber"
+    android:orientation="vertical"
+    android:id="@+id/image_grabber_layout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/profileLabel"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        />
+
+    <RelativeLayout
+        android:id="@+id/locator_control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/longitude_field"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/longFieldHint"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="@color/fiord"
+            android:textSize="15sp"
+            tools:ignore="TextContrastCheck"
+            />
+
+        <EditText
+            android:id="@+id/latitude_field"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/longitude_field"
+            android:hint="@string/latFieldHint"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColorHint="@color/fiord"
+            android:textSize="15sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/date_picker"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/latitude_field"
+            android:hint="@string/dateFieldHint"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:gravity="center"
+            android:textColorHint="@color/fiord"
+            android:textSize="15sp"
+            tools:ignore="TextContrastCheck"
+            />
+
+        <Button
+            android:id="@+id/get_image_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/mortar"
+            android:maxHeight="48dp"
+            android:text="@string/imageGrabButton"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start"
+        android:fitsSystemWindows="true"
+        >
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/menu"
+            >
+        </com.google.android.material.navigation.NavigationView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cadet_Blue">
+
+                <Button
+                    android:id="@+id/favourite_button"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/favourite_before"
+                    android:contentDescription="@string/todo" />
+
+                <Button
+                    android:id="@+id/download_button"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@drawable/download_before"
+                    android:contentDescription="@string/todo" />
+
+                <ImageView
+                    android:id="@+id/image_viewer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/unnamed" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:padding="5dp"
+                    android:background="@color/east_Bay"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+        </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

@@ -3,18 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity"
+    tools:context=".activities.ProfileActivity"
     android:id="@+id/ProfileLayout"
     android:orientation="vertical"
     >
 
-    <TextView
-        android:id="@+id/topBar"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:text="@string/profileLabel"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:textAlignment="center"
         android:background="@color/blue_Haze"
         />
@@ -25,7 +25,7 @@
         android:layout_marginTop="15dp"
         android:text="@string/profilePictureLabel"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textAlignment="center"
         android:labelFor="@+id/profilePictureButton"
         />
@@ -34,9 +34,10 @@
         android:id="@+id/profilePictureButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@android:drawable/picture_frame"
         android:layout_gravity="center"
-        />
+        android:contentDescription="@string/imageButtonContentDescription"
+        android:src="@android:drawable/picture_frame"
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/fNameLabel"
@@ -44,7 +45,7 @@
         android:layout_height="wrap_content"
         android:text="@string/profileFirstNameLabel"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:labelFor="@+id/fNameField"
         />
 
@@ -53,10 +54,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/profileFirstNameHint"
-        android:textColorHint="@color/fiord"
-        android:minHeight="48dp"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
-        />
+        android:minHeight="48dp"
+        android:textColorHint="@color/fiord"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/lNameLabel"
@@ -64,7 +66,7 @@
         android:layout_height="wrap_content"
         android:text="@string/profileLastNameLabel"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:labelFor="@+id/lNameField"
         />
 
@@ -73,10 +75,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/profileLastNameHint"
-        android:textColorHint="@color/fiord"
-        android:minHeight="48dp"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
-        />
+        android:minHeight="48dp"
+        android:textColorHint="@color/fiord"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/emailAddressLabel"
@@ -84,7 +87,7 @@
         android:layout_height="wrap_content"
         android:text="@string/profileEmailAddressLabel"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:labelFor="@+id/emailAddressField"
         />
 
@@ -93,10 +96,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/profileEmailAddressHint"
-        android:textColorHint="@color/fiord"
-        android:minHeight="48dp"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
-        />
+        android:minHeight="48dp"
+        android:textColorHint="@color/fiord"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/passwordLabel"
@@ -104,7 +108,7 @@
         android:layout_height="wrap_content"
         android:text="@string/profilePasswordLabel"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:labelFor="@+id/passwordField"
         />
 
@@ -113,21 +117,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/profilePasswordHint"
-        android:textColorHint="@color/fiord"
-        android:minHeight="48dp"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
-        />
+        android:minHeight="48dp"
+        android:textColorHint="@color/fiord"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/profileSaveButton"
         android:layout_width="140dp"
         android:layout_height="75dp"
         android:layout_gravity="center"
-        android:layout_margin="15dp"
+        android:layout_margin="10dp"
         android:text="@string/profileSaveButton"
         android:backgroundTint="@color/east_Bay"
         android:textColor="@color/white"
-        android:textSize="24dp"
+        android:textSize="24sp"
         />
 
     <Button
@@ -135,28 +140,11 @@
         android:layout_width="140dp"
         android:layout_height="75dp"
         android:layout_gravity="center"
-        android:layout_margin="15dp"
+        android:layout_margin="10dp"
         android:text="@string/profileCancelButton"
         android:backgroundTint="@color/white"
         android:textColor="@color/east_Bay"
-        android:textSize="24dp"
-        />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        />
-
-    <TextView
-        android:id="@+id/lowerBar"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:textColor="@color/black"
-        android:text="@string/developerDetails"
-        android:textSize="11dp"
-        android:textAlignment="center"
-        android:background="@color/blue_Haze"
+        android:textSize="24sp"
         />
 
 </LinearLayout>

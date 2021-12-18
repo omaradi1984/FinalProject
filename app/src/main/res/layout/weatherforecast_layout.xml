@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WeatherForecast"
+    android:orientation="vertical"
+    android:layout_marginTop="27dp"
+    android:layout_marginBottom="27dp"
+    android:layout_marginLeft="48dp"
+    android:layout_marginRight="48dp"
+    >
+
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/favourite_before"
+        android:contentDescription="TODO" />
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:rowCount="4"
+    android:columnCount="2"
+    android:layout_weight="1"
+    android:layout_gravity="fill"
+    >
+    <TextView
+        android:id="@+id/currentTemperatureTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="Current temperature"
+        />
+    <TextView
+        android:id="@+id/currentTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current temperature placeholder"
+        android:layout_columnWeight="1"
+        />
+    <TextView
+        android:id="@+id/minTemperatureTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="Min temperature"
+        />
+    <TextView
+        android:id="@+id/minTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min temperature placeholder"
+        android:layout_columnWeight="1"
+        />
+    <TextView
+        android:id="@+id/maxTemperatureTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="Max temperature"
+        />
+    <TextView
+        android:id="@+id/maxTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max temperature placeholder"
+        android:layout_columnWeight="1"
+        />
+    <TextView
+        android:id="@+id/uvRatingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="UV rating"
+        />
+    <TextView
+        android:id="@+id/uvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UV rating placeholder"
+        android:layout_columnWeight="1"
+        />
+</GridLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:padding="10dp"
+        />
+</LinearLayout>

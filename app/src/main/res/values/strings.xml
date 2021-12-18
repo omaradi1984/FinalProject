@@ -19,8 +19,27 @@
     <string name="profileCancelButton">Cancel</string>
     <string name="developerDetails">Designed by Omar Zohouradi</string>
     <string name="loginLabel">Login</string>
-    <string name="longFieldHint">Type a longtitude</string>
-    <string name="latFieldHint">Type a latitude</string>
-    <string name="imageSearchButton">Search</string>
-
+    <string name="longFieldHint">Longitude</string>
+    <string name="latFieldHint">Latitude</string>
+    <string name="imageGrabButton">Get image</string>
+    <string name="todo">TODO</string>
+    <string name="favourite_icon">Favourite icon</string>
+    <string name="imageButtonContentDescription">Profile picture</string>
+    <string name="firstNameContentDescription">First name field</string>
+    <string name="LogoutButtonLabel">Logout</string>
+    <string name="LogoutButton">Logout</string>
+    <string name="weatherButton">Weather</string>
+    <string name="favouriteButton">Favourites</string>
+    <string name="ProfileButton">My profile</string>
+    <string name="imageGrabber">Image Grabber</string>
+    <string name="dateFieldHint">Pick a date</string>
+    <string name="DialogueTitle">Image already in Favourite list.</string>
+    <string name="PositiveButton">Yes</string>
+    <string name="NegativeButton">No</string>
+    <string name="history">History</string>
+    <string name="DownloadConfirmation">Download Confirmation</string>
+    <string name="FavouriteDialog">Favourite Confirmation</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="DialogueTItle">Remove Confirmation</string>
 </resources>
